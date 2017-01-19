@@ -1,4 +1,5 @@
 class Users::RegistrationsController < Devise::RegistrationsController
+    # Pro users save with a strip subscription function
   def create
     super do |resource|
       if params[:plan]
