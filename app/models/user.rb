@@ -6,6 +6,8 @@ class User < ApplicationRecord
          
   belongs_to :plan
   
+  has_one :profile
+  
   attr_accessor :stripe_card_token
   
   # validate user then call Stripe and setup subscription
