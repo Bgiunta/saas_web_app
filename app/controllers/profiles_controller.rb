@@ -1,5 +1,6 @@
 class ProfilesController < ApplicationController
   # GET to /users/:user_id/profile/new
+  redirect_to user_path( params[:user_id] )
   def new
     @profile = Profile.new
   end
